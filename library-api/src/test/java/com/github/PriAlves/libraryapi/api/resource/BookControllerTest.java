@@ -25,8 +25,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
-@WebMvcTest(controllers = BookController.class)
-@AutoConfigureMockMvc
+@WebMvcTest(controllers = BookController.class) //para teste em api
+@AutoConfigureMockMvc //para teste em api
 public class BookControllerTest {
 
     static String BOOK_API = "/api/books";
